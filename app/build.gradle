@@ -74,6 +74,13 @@ dependencies {
 
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1"
 
+    testImplementation "androidx.test:core:1.5.0"
+    // Optional -- Mockito framework
+    testImplementation "org.mockito:mockito-core:3.9.0"
+    // Optional -- mockito-kotlin
+    testImplementation "org.mockito.kotlin:mockito-kotlin:3.2.0"
+
+
 
     //Getting the retrofit dependencies
     implementation "com.squareup.retrofit2:retrofit:2.9.0"

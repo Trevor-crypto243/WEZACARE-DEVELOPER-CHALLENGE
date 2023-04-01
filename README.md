@@ -5,7 +5,7 @@ This is an android application built with kotlin using the harry potter public a
 
 
 <h2>Programming Language</h2>
-Kotlin has been used as the programming language for this application due to its efficiency, versatility, and widespread use in software development. The performance benefits of kotlin allow for quick and efficient comparisons between large files, making it a suitable choice for this type of application. In addition, kotlin is widely used and has a large user community, providing a wealth of resources for development and troubleshooting. The object-oriented programming features of kotlin also make it easy to maintain and extend the codebase in the future.
+Kotlin has been used as the programming language for this application due to its efficiency, versatility, and widespread use in software development. The performance benefits of kotlin  make it a suitable choice for this type of application. In addition, kotlin is widely used and has a large user community, providing a wealth of resources for development and troubleshooting. The object-oriented programming features of kotlin also make it easy to maintain and extend the codebase in the future.
 
 <h2>Running the application</h2>
 Download and install the application from the link below
@@ -13,7 +13,7 @@ https://drive.google.com/file/d/1cbo9W-9Z5vVa9OZJkYwQ_bSxUwSMAF5y/view?usp=shari
 
 
 <h2>Testing the API</h2>
-This section provides information on how to run the unit test for getCharacters method in CharacterApiService class, located in com.example.wezacare_developer_challenge.viewmodels package.
+This section provides information on how to run the unit test for getCharacters method in CharacterApiService class, located in package com.example.wezacare_developer_challenge.network_data package.
 
 <h3>Prerequisites</h3>
 To run this test, you need to have:
