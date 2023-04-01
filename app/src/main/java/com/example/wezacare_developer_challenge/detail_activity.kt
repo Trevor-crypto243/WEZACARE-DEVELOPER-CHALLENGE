@@ -12,14 +12,15 @@ class detail_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
         supportActionBar?.setTitle("WEZACARE DEVELOPER CHALLENGE")
-        Fresco.initialize(this)//Initilaising the frescoo library for holding the image
 
+        //Initilaising the frescoo library for holding the image
+        Fresco.initialize(this)
 
         val character_details = intent.getSerializableExtra("my_data") as Character_
+
         binding.imageView.setImageURI(character_details.image)
+        binding.wandValue.text = "WOOD : ${character_details.wand?.wood.toString()}  CORE : ${character_details.wand?.core.toString()}  LENGTH : ${character_details.wand?.length.toString()}"
         binding.actorValue.text = character_details.actor
         binding.aliveValue.text = character_details.alive.toString()
         binding.alternateActorValue.text = character_details.alternateActors.toString()

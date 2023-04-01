@@ -1,9 +1,10 @@
-
+package com.example.wezacare_developer_challenge
 import androidx.lifecycle.Observer
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.wezacare_developer_challenge.network_data.CharacterApi
 import com.example.wezacare_developer_challenge.network_data.CharacterApiService
 import com.example.wezacare_developer_challenge.network_data.Character_
+import com.example.wezacare_developer_challenge.network_data.Wand
 import com.example.wezacare_developer_challenge.viewmodels.CharacterViewModel
 import io.mockk.coEvery
 import io.mockk.mockk
@@ -33,7 +34,7 @@ class CharacterViewModelTest {
     @Before
     fun setUp() {
         viewModel = CharacterViewModel()
-        CharacterApi.retrofitService = mockService
+//        CharacterApi.retrofitService = mockService
     }
 
     @After
@@ -42,10 +43,11 @@ class CharacterViewModelTest {
         testScope.cleanupTestCoroutines()
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun `getCharacterPhotos should set status to success and result to non-empty list`() = testScope.runBlockingTest {
         // Given
-        val character = Character_(id = "1", name = "Harry Potter", alternateNames = emptyList(), species = "human", gender = "male", house = "Gryffindor", dateOfBirth = null, yearOfBirth = null, wizard = true, ancestry = "pure-blood", eyeColour = "green", hairColour = "black", patronus = "stag", hogwartsStudent = true, hogwartsStaff = false, actor = "Daniel Radcliffe", alternateActors = emptyList(), alive = true, image = "https://i.imgur.com/2lCdx7C.jpg")
+        val character = Character_(id = "1", name = "Harry Potter", alternateNames = emptyList(), species = "human", gender = "male", house = "Gryffindor", dateOfBirth = null, yearOfBirth = null, wizard = true, ancestry = "pure-blood", eyeColour = "green", hairColour = "black", wand = Wand(wood="holly", core="phoenix feather", length = 11.0) ,patronus = "stag", hogwartsStudent = true, hogwartsStaff = false, actor = "Daniel Radcliffe", alternateActors = emptyList(), alive = true, image = "https://i.imgur.com/2lCdx7C.jpg")
         val listResult = listOf(character)
         coEvery { mockService.getCharacters() } returns listResult
 

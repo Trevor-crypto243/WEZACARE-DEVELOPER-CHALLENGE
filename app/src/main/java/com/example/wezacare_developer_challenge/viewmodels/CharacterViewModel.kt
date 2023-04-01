@@ -27,10 +27,10 @@ class CharacterViewModel : ViewModel() {
             try {
                 val listResult = CharacterApi.retrofitService.getCharacters()
                 _status.value = "success"
-                _result.value = listResult
-
+                _result.value = listResult //setting the listResult to the result variable
+            //catch to handle request failure
             } catch (e: Exception) {
-                _status.value = "Failure: network error... check that you are connected and try again"
+                _status.value = "network error... please refresh the network and open the app again"
             }
         }
     }

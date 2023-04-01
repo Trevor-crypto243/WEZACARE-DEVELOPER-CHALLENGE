@@ -8,12 +8,32 @@ This is an android application built with kotlin using the harry potter public a
 Kotlin has been used as the programming language for this application due to its efficiency, versatility, and widespread use in software development. The performance benefits of kotlin allow for quick and efficient comparisons between large files, making it a suitable choice for this type of application. In addition, kotlin is widely used and has a large user community, providing a wealth of resources for development and troubleshooting. The object-oriented programming features of kotlin also make it easy to maintain and extend the codebase in the future.
 
 <h2>Running the application</h2>
-Download and install the application from the link provided
+Download and install the application from the link below
+https://drive.google.com/file/d/1cbo9W-9Z5vVa9OZJkYwQ_bSxUwSMAF5y/view?usp=sharing
 
 
-<h2>Testing the code</h2>
+<h2>Testing the API</h2>
+This section provides information on how to run the unit test for getCharacters method in CharacterApiService class, located in com.example.wezacare_developer_challenge.viewmodels package.
+
+<h3>Prerequisites</h3>
+To run this test, you need to have:
+
+Android Studio or any other IDE that supports Kotlin and Android development
+An Android emulator or device running Android API level 28 or higher
+
+<h3>How to run the test</h3>
+To run the test, follow these steps:
+
+Open the project in Android Studio or your preferred IDE.
+1. Build and sync the project to ensure that all dependencies are downloaded.
+2. Open the CharacterApiServiceTest class located in the src/test/java/com/example/wezacare_developer_challenge/viewmodels directory.
+3. Right-click on the test getCharacters() method and select Run 'test getCharacters()'.
+4. Expected result
+5. The test should pass successfully, and the output should show the number of characters returned from the getCharacters method.
+
+<h3>Troubleshooting</h3>
+If the test fails, please check your internet connection and ensure that the server is up and running. You can also try to increase the timeout value for the test. If you are still facing issues, please contact the developer for further assistance.
 
       
-<h2>License</h2>
-This program is licensed under the MIT License. A copy of the license can be found in the LICENSE file.
+
 
