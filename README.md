@@ -26,7 +26,7 @@ To run the test, follow these steps:
 
 Open the project in Android Studio or your preferred IDE.
 1. Build and sync the project to ensure that all dependencies are downloaded.
-2. Open the CharacterApiServiceTest class located in the src/test/java/com/example/wezacare_developer_challenge/viewmodels directory.
+2. Open the CharacterApiServiceTest class located in the src/test/java/com/example/wezacare_developer_challenge/viewmodels directory. under the tests folder in the API_testing.kt class
 3. Right-click on the test getCharacters() method and select Run 'test getCharacters()'.
 4. Expected result
 5. The test should pass successfully, and the output should show the number of characters returned from the getCharacters method.
