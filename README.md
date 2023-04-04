@@ -13,9 +13,10 @@ https://drive.google.com/file/d/1cbo9W-9Z5vVa9OZJkYwQ_bSxUwSMAF5y/view?usp=shari
 
 
 <h2>Testing the API</h2>
-This section provides information on how to run the unit test for getCharacters method in CharacterApiService class, located in package com.example.wezacare_developer_challenge.network_data package.
+This section provides information on how to run the unit test for `getCharacters()` method in `CharacterApiService` class, 
+located in package `com.example.wezacare_developer_challenge.network_data` package.
 
-<h3>API testing, using the CharacterApiServiceTest class</h3>
+<h3>API testing</h3>
 To run this test, you need to have:
 
 Android Studio or any other IDE that supports Kotlin and Android development
@@ -24,28 +25,30 @@ An Android emulator or device running Android API level 28 or higher
 <h3>How to run the test</h3>
 To run the test, follow these steps:
 
-Open the project in Android Studio or your preferred IDE.
-1. Build and sync the project to ensure that all dependencies are downloaded.
-2. Open the CharacterApiServiceTest class located in the src/test/java/com/example/wezacare_developer_challenge/viewmodels directory. under the tests folder in the API_testing.kt class
-3. Right-click on the test getCharacters() method and select Run 'test getCharacters()'.
-4. Expected result
-5. The test should pass successfully, and the output should show the number of characters returned from the getCharacters method.
+1. Open the project in Android Studio or your preferred IDE.
+2. Build and sync the project to ensure that all dependencies are downloaded.
+3. Open the `CharacterApiServiceTest` class located in the `src/test/java/com/example/wezacare_developer_challenge/viewmodels` directory. 
+   under the tests folder in the `API_testing.kt` class
+4. Right-click on the test `getCharacters()` method and select `Run 'test getCharacters()'`.
+5. Expected result
+   The test should pass successfully.
+   The output should show the number of characters returned from the getCharacters method. which is `402` in number
 
 <h3>Available UI Tests</h3>
 The following tests are available in the ExampleInstrumentedTest class:
-actionBarTitleIsDisplayed() - This test checks whether the action bar is displayed correctly.
-statusTextIsDisplayedCorrectly() - This test checks whether the network state text is displayed correctly.
-recyclerViewIsDisplayed() - This test checks whether the RecyclerView is displayed correctly.
+1. `actionBarTitleIsDisplayed()` - This test checks whether the action bar is displayed correctly.
+2. `statusTextIsDisplayedCorrectly()` - This test checks whether the network state text is displayed correctly.
+3. `recyclerViewIsDisplayed()` - This test checks whether the RecyclerView is displayed correctly.
 
 <h3>How to run the tests</h3>
 To run the tests, follow these steps:
-Open the project in Android Studio or your preferred IDE.
 
-Build and sync the project to ensure that all dependencies are downloaded.
-Open the ExampleInstrumentedTest class located in the src/androidTest/java/com/example/wezacare_developer_challenge directory.
-Right-click on the test method you want to run and select Run 'test <method-name>'.
-Ensure you are connected to an android emulator or a physical android device
-Expected result:
+1. Open the project in Android Studio or your preferred IDE.
+2. Build and sync the project to ensure that all dependencies are downloaded.
+3. Open the `ExampleInstrumentedTest` class located in the `src/androidTest/java/com/example/wezacare_developer_challenge directory`.
+4. Right-click on the test method you want to run and select `Run 'test <method-name>'`.
+5. Ensure you are connected to an android emulator or a physical android device
+6. Expected result:
 The test should pass successfully, and the output should show the expected result.
 
 <h3>Troubleshooting</h3>
