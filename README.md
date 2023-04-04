@@ -15,7 +15,7 @@ https://drive.google.com/file/d/1cbo9W-9Z5vVa9OZJkYwQ_bSxUwSMAF5y/view?usp=shari
 <h2>Testing the API</h2>
 This section provides information on how to run the unit test for getCharacters method in CharacterApiService class, located in package com.example.wezacare_developer_challenge.network_data package.
 
-<h3>Prerequisites</h3>
+<h3>API testing, using the CharacterApiServiceTest class</h3>
 To run this test, you need to have:
 
 Android Studio or any other IDE that supports Kotlin and Android development
@@ -30,6 +30,23 @@ Open the project in Android Studio or your preferred IDE.
 3. Right-click on the test getCharacters() method and select Run 'test getCharacters()'.
 4. Expected result
 5. The test should pass successfully, and the output should show the number of characters returned from the getCharacters method.
+
+<h3>Available UI Tests</h3>
+The following tests are available in the ExampleInstrumentedTest class:
+actionBarTitleIsDisplayed() - This test checks whether the action bar is displayed correctly.
+statusTextIsDisplayedCorrectly() - This test checks whether the network state text is displayed correctly.
+recyclerViewIsDisplayed() - This test checks whether the RecyclerView is displayed correctly.
+
+<h3>How to run the tests</h3>
+To run the tests, follow these steps:
+Open the project in Android Studio or your preferred IDE.
+
+Build and sync the project to ensure that all dependencies are downloaded.
+Open the ExampleInstrumentedTest class located in the src/androidTest/java/com/example/wezacare_developer_challenge directory.
+Right-click on the test method you want to run and select Run 'test <method-name>'.
+Ensure you are connected to an android emulator or a physical android device
+Expected result:
+The test should pass successfully, and the output should show the expected result.
 
 <h3>Troubleshooting</h3>
 If the test fails, please check your internet connection and ensure that the server is up and running. You can also try to increase the timeout value for the test. If you are still facing issues, please contact the developer for further assistance.
